@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h>//ok
 int main()
 {
           int a,b,c,i;
@@ -6,6 +6,7 @@ int main()
           scanf("%d",&a);
           printf("enter Value Of B-:");
           scanf("%d",&b);
+          printf("Done");
         
 if((a&&b))
 {
