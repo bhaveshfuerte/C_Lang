@@ -6,7 +6,7 @@ int main()
           scanf("%d",&a);
           printf("enter Value Of B-:");
           scanf("%d",&b);
-          printf("Done");
+          
         
 if((a&&b))
 {
