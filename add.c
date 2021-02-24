@@ -8,6 +8,7 @@ int main()
           scanf("%d",&b);
           
           printf("The Sum is %d",a+b);
+          printf("OKKKKK");
           return 0;
 
 }
