@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Click On Button to Join Two Arrays</p>
+    <button onclick="myFunction()">Click</button>
+    <h1 id="Demo"></h1>
+    <script>
+        function myFunction()
+        {
+        var A = ["ABC", "DEF", "GHI"];
+        var B = ["JKL", "MNO", "PQR"];
+        var C = ["STU", "VWX", "YZA"];
+        var D = A.concat(B);
+        document.getElementById("Demo").innerHTML = D;
+    }
+    </script>
+</body>
+
+</html>
