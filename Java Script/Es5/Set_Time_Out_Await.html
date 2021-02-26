@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color: grey;">
+
+<h2 style="margin-left: 35%; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ; text-decoration: chartreuse; text-shadow:0px 20px 39px; color: maroon; text-decoration-style:solid;">JavaScript async / await</h2>
+
+<p style="margin-left: 35%; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ; text-decoration: chartreuse; text-shadow:0px 20px 39px; color:maroon; text-decoration-style:solid;">Wait 3 seconds (1000 milliseconds) for this page to change.</p>
+
+<h1 id="demo" style="margin-left: 35%; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ; text-decoration: chartreuse; text-shadow:0px 20px 39px; color: orange; text-decoration-style:solid;"></h1>
+<h1 id="demo1" style="margin-left: 35%; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ; text-decoration: chartreuse; text-shadow:0px 20px 39px; color: white; text-decoration-style:solid;"></h1>
+<h1 id="demo2" style="margin-left: 35%; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ; text-decoration: chartreuse; text-shadow:0px 20px 39px; color: green; text-decoration-style:solid;"></h1>
+
+<script>
+async function myDisplay() {
+  let myPromise = new Promise(function(myResolve, myReject) {
+    setTimeout(function() { myResolve("My Name Is Bhavesh!!"); }, 3000);
+
+  });
+  document.getElementById("demo").innerHTML = await myPromise;
+}
+async function myDisplay1() {
+  let myPromise = new Promise(function(myResolve, myReject) {
+
+    setTimeout(function() { myResolve("My Name Is SMARTY!!"); }, 4000);
+
+  });
+  document.getElementById("demo1").innerHTML = await myPromise;
+}
+
+async function myDisplay2() {
+  let myPromise = new Promise(function(myResolve, myReject) {
+
+    setTimeout(function() { myResolve("My Name Is DARKDEVIL!!"); }, 5000);
+  });
+  document.getElementById("demo2").innerHTML = await myPromise;
+}
+
+
+myDisplay();
+myDisplay1();
+myDisplay2();
+</script>
+
+</body>
+</html>

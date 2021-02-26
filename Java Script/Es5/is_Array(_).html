@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2  style="margin-left: 30%; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ; text-decoration: chartreuse; text-shadow:0px 20px 39px; color: blue; text-decoration-style:solid;">JavaScript Array.isArray()</h2>
+
+<p>Click the button to check if "fruits" is an array.</p>
+
+<button onclick="myFunction()">Try it</button>
+<p id="demo1"  style="margin-left: 30%; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ; text-decoration: chartreuse; text-shadow:0px 20px 39px; color: blue; text-decoration-style:solid;"></p>
+
+
+<p id="demo"  style="margin-left: 30%; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ; text-decoration: chartreuse; text-shadow:0px 20px 39px; color: blue; text-decoration-style:solid;"></p>
+
+<script>
+function myFunction() {
+  var fruits = ["Banana", "Orange", "Apple", "Mango"];
+  var x = document.getElementById("demo");
+  x.innerHTML = Array.isArray(fruits);
+  document.getElementById("demo1").innerHTML = fruits;
+}
+</script>
+
+</body>
+</html>

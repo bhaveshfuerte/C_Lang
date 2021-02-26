@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2  style="margin-left: 30%; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ; text-decoration: chartreuse; text-shadow:0px 20px 39px; color: blue; text-decoration-style:solid;">Create Object from JSON String</h2>
+
+<p id="demo" style="margin-left: 45%; margin-top: 10%; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ; text-decoration: chartreuse; text-shadow:30px 20px 39px; color: blue; text-decoration-style:solid;"  ></p>
+<p id="demo1" style="margin-left: 45%; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ; text-decoration: chartreuse; text-shadow:30px 20px 39px; color: blue; text-decoration-style:solid;"  ></p>
+<p id="demo2" style="margin-left: 45%; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ; text-decoration: chartreuse; text-shadow:30px 20px 39px; color: blue; text-decoration-style:solid;"  ></p>
+
+<script>
+var text = '{"employees":[' +
+'{"firstName":"John","lastName":"Doe" },' +
+'{"firstName":"Anna","lastName":"Smith" },' +
+'{"firstName":"Peter","lastName":"Jones" }]}';
+
+obj = JSON.parse(text);
+document.getElementById("demo").innerHTML =
+obj.employees[1].firstName + " " + obj.employees[1].lastName;
+document.getElementById("demo1").innerHTML =
+obj.employees[1].firstName + " " + obj.employees[0].lastName;
+document.getElementById("demo2").innerHTML =
+obj.employees[1].firstName + " " + obj.employees[2].lastName;
+</script>
+
+</body>
+</html>
